@@ -92,9 +92,11 @@ Essential Concepts
 * Bias unit = <img src="https://latex.codecogs.com/gif.latex?a^{(i)}_0" title="a^{(i)}_0" /> = 1 for each layer; corresponds to <img src="https://latex.codecogs.com/gif.latex?x_0=1" title="x_0=1" />
 
 *Example of Feedforward Neural Network*
+
 ![](http://franck.fleurey.free.fr/NeuralNetwork/images/network.gif)
 
 *Mathematical Representation of Above Neural Network*
+
 <img src="https://latex.codecogs.com/gif.latex?a^{(2)}_1&space;=&space;g(\theta^{(1)}_{10}&space;&plus;&space;\theta^{(1)}_{11}x_1&space;&plus;&space;\theta^{(1)}_{12}x_2&space;&plus;&space;\theta^{(1)}_{13}x_3&space;&plus;&space;\theta^{(1)}_{14}x_4)&space;=&space;g(\theta^{(1)}_1\cdot&space;x)" title="a^{(2)}_1 = g(\theta^{(1)}_{10} + \theta^{(1)}_{11}x_1 + \theta^{(1)}_{12}x_2 + \theta^{(1)}_{13}x_3 + \theta^{(1)}_{14}x_4) = g(\theta^{(1)}_1\cdot x)" />
 
 <img src="https://latex.codecogs.com/gif.latex?a^{(2)}_2&space;=&space;g(\theta^{(1)}_{20}&space;&plus;&space;\theta^{(1)}_{21}x_1&space;&plus;&space;\theta^{(1)}_{22}x_2&space;&plus;&space;\theta^{(1)}_{23}x_3&space;&plus;&space;\theta^{(1)}_{24}x_4)&space;=&space;g(\theta^{(1)}_2\cdot&space;x)" title="a^{(2)}_2 = g(\theta^{(1)}_{20} + \theta^{(1)}_{21}x_1 + \theta^{(1)}_{22}x_2 + \theta^{(1)}_{23}x_3 + \theta^{(1)}_{24}x_4) = g(\theta^{(1)}_2\cdot x)" />
