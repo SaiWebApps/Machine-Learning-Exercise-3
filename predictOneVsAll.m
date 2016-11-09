@@ -8,35 +8,18 @@ function p = predictOneVsAll(all_theta, X)
 %  of values from 1..K (e.g., p = [1; 3; 1; 2] predicts classes 1, 3, 1, 2
 %  for 4 examples) 
 
-m = size(X, 1);
-num_labels = size(all_theta, 1);
+m = size(X, 1); % # of training examples
+num_labels = size(all_theta, 1); % # of output classes (multi-class)
+X = [ones(m, 1), X]; % Add column of ones to the X data matrix (x0).
 
-% You need to return the following variables correctly 
-p = zeros(size(X, 1), 1);
+% all_theta = result of oneVsAll (num_labels x (n+1))
+% X = (m x (n+1))
+% h(i,j) = probability that example i is label j
+h = X * all_theta'; % (m x num_labels)
 
-% Add ones to the X data matrix
-X = [ones(m, 1) X];
-
-% ====================== YOUR CODE HERE ======================
-% Instructions: Complete the following code to make predictions using
-%               your learned logistic regression parameters (one-vs-all).
-%               You should set p to a vector of predictions (from 1 to
-%               num_labels).
-%
-% Hint: This code can be done all vectorized using the max function.
-%       In particular, the max function can also return the index of the 
-%       max element, for more information see 'help max'. If your examples 
-%       are in rows, then, you can use max(A, [], 2) to obtain the max 
-%       for each row.
-%       
-
-
-
-
-
-
-
-% =========================================================================
-
+% p -> (mx1) vector, where p(i) = prediction for training example i
+% We make our prediction by selecting the label with the highest probability
+% for each training example in h.
+[maxProbabilities, p] = max(h, [], 2); % Row-wise maxima
 
 end
