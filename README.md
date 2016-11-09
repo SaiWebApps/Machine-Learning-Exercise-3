@@ -1,7 +1,7 @@
-Coursera Machine Learning Exercise #2
+Coursera Machine Learning Exercise #3
 ===================
 
-Supervised Learning - Classification Problems (Logistic Regression Model)
+Supervised Learning - Multi-Class Problems and Neural Networks
 
 -----------
 Prerequisites
