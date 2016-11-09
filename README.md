@@ -97,15 +97,21 @@ Essential Concepts
 
 *Mathematical Representation of Above Neural Network*
 
+Note that <img src="https://latex.codecogs.com/gif.latex?a^{(1)}" title="a^{(1)}" /> is the input layer.
+
+Activation Units in the Hidden Layer
+
 <img src="https://latex.codecogs.com/gif.latex?a^{(2)}_1&space;=&space;g(\theta^{(1)}_{10}&space;&plus;&space;\theta^{(1)}_{11}x_1&space;&plus;&space;\theta^{(1)}_{12}x_2&space;&plus;&space;\theta^{(1)}_{13}x_3&space;&plus;&space;\theta^{(1)}_{14}x_4)&space;=&space;g(\theta^{(1)}_1\cdot&space;x)" title="a^{(2)}_1 = g(\theta^{(1)}_{10} + \theta^{(1)}_{11}x_1 + \theta^{(1)}_{12}x_2 + \theta^{(1)}_{13}x_3 + \theta^{(1)}_{14}x_4) = g(\theta^{(1)}_1\cdot x)" />
 
 <img src="https://latex.codecogs.com/gif.latex?a^{(2)}_2&space;=&space;g(\theta^{(1)}_{20}&space;&plus;&space;\theta^{(1)}_{21}x_1&space;&plus;&space;\theta^{(1)}_{22}x_2&space;&plus;&space;\theta^{(1)}_{23}x_3&space;&plus;&space;\theta^{(1)}_{24}x_4)&space;=&space;g(\theta^{(1)}_2\cdot&space;x)" title="a^{(2)}_2 = g(\theta^{(1)}_{20} + \theta^{(1)}_{21}x_1 + \theta^{(1)}_{22}x_2 + \theta^{(1)}_{23}x_3 + \theta^{(1)}_{24}x_4) = g(\theta^{(1)}_2\cdot x)" />
 
 <img src="https://latex.codecogs.com/gif.latex?a^{(2)}_3&space;=&space;g(\theta^{(1)}_{30}&space;&plus;&space;\theta^{(1)}_{31}x_1&space;&plus;&space;\theta^{(1)}_{32}x_2&space;&plus;&space;\theta^{(1)}_{33}x_3&space;&plus;&space;\theta^{(1)}_{34}x_4)&space;=&space;g(\theta^{(1)}_3\cdot&space;x)" title="a^{(2)}_3 = g(\theta^{(1)}_{30} + \theta^{(1)}_{31}x_1 + \theta^{(1)}_{32}x_2 + \theta^{(1)}_{33}x_3 + \theta^{(1)}_{34}x_4) = g(\theta^{(1)}_3\cdot x)" />
 
-<img src="https://latex.codecogs.com/gif.latex?a^{(3)}_1&space;=&space;g(\theta^{(2)}_{10}&space;&plus;&space;\theta^{(2)}_{11}a^{(2)}_1&space;&plus;&space;\theta^{(2)}_{12}a^{(2)}_2&space;&plus;&space;\theta^{(2)}_{13}a^{(2)}_3)&space;=&space;g(\theta^{(2)}_1&space;\cdot&space;a^{(2)})" title="a^{(3)}_1 = g(\theta^{(2)}_{10} + \theta^{(2)}_{11}a^{(2)}_1 + \theta^{(2)}_{12}a^{(2)}_2 + \theta^{(2)}_{13}a^{(2)}_3) = g(\theta^{(2)}_1 \cdot a^{(2)})" />
+Output Layer
 
-<img src="https://latex.codecogs.com/gif.latex?a^{(3)}_2&space;=&space;g(\theta^{(2)}_{20}&space;&plus;&space;\theta^{(2)}_{21}a^{(2)}_1&space;&plus;&space;\theta^{(2)}_{22}a^{(2)}_2&space;&plus;&space;\theta^{(2)}_{23}a^{(2)}_3)&space;=&space;g(\theta^{(2)}_2&space;\cdot&space;a^{(2)})" title="a^{(3)}_2 = g(\theta^{(2)}_{20} + \theta^{(2)}_{21}a^{(2)}_1 + \theta^{(2)}_{22}a^{(2)}_2 + \theta^{(2)}_{23}a^{(2)}_3) = g(\theta^{(2)}_2 \cdot a^{(2)})" />
+<img src="https://latex.codecogs.com/gif.latex?h^{(1)}_\Theta(x)&space;=&space;a^{(3)}_1&space;=&space;g(\theta^{(2)}_{10}&space;&plus;&space;\theta^{(2)}_{11}a^{(2)}_1&space;&plus;&space;\theta^{(2)}_{12}a^{(2)}_2&space;&plus;&space;\theta^{(2)}_{13}a^{(2)}_3)&space;=&space;g(\theta^{(2)}_1&space;\cdot&space;a^{(2)})" title="h^{(1)}_\Theta(x) = a^{(3)}_1 = g(\theta^{(2)}_{10} + \theta^{(2)}_{11}a^{(2)}_1 + \theta^{(2)}_{12}a^{(2)}_2 + \theta^{(2)}_{13}a^{(2)}_3) = g(\theta^{(2)}_1 \cdot a^{(2)})" />
+
+<img src="https://latex.codecogs.com/gif.latex?h^{(2)}_\Theta(x)&space;=&space;a^{(3)}_2&space;=&space;g(\theta^{(2)}_{20}&space;&plus;&space;\theta^{(2)}_{21}a^{(2)}_1&space;&plus;&space;\theta^{(2)}_{22}a^{(2)}_2&space;&plus;&space;\theta^{(2)}_{23}a^{(2)}_3)&space;=&space;g(\theta^{(2)}_2&space;\cdot&space;a^{(2)})" title="h^{(2)}_\Theta(x) = a^{(3)}_2 = g(\theta^{(2)}_{20} + \theta^{(2)}_{21}a^{(2)}_1 + \theta^{(2)}_{22}a^{(2)}_2 + \theta^{(2)}_{23}a^{(2)}_3) = g(\theta^{(2)}_2 \cdot a^{(2)})" />
 
 -------------
 References
